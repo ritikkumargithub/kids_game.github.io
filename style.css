@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to left,#6ff5dc,#91a0e6);
+}
+section h2{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+    animation: zoom 1s linear infinite;
+    animation-direction: alternate;
+}
+ @keyframes zoom {
+    from{transform: translateX(-30px);}
+    to {transform: translateX(30px);}
+} 
+.center{
+    width: 500px;
+    height: 400px;
+    background-color: #40d861;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.insertBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#v1, #v2{
+    text-align: center;
+    padding: 20px 30px;
+    width: 85px;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px rgb(7, 7, 7);
+    border: none;
+    outline: none;
+}
+
+.box1 p{
+   font-size: 50px;
+   margin: 0 13px 0 13px;
+}
+.middleBox #ans{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(7, 7, 7);
+   
+}
+.middleBox #ans:hover{
+    outline: 2px solid green;
+}
+.sentBox button{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    background: #079992;
+    border: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+@media (max-width:600px) {
+    .center{
+        width: 350px;
+        height: 400px;  
+    }
+    section h2{
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        font-size: 1.3rem;
+       
+    }
+}
